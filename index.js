@@ -13,7 +13,7 @@ let artist = document.getElementById("artist");
 let songs = [
   {
     music: "Main Nikla Gaddi Leke Gadar 2 128 Kbps.mp3",
-    poster: "/main-nikla-gaddi-leke-gadar-2.jpg",
+    poster: "main-nikla-gaddi-leke-gadar-2.jpg",
     title: "Main Nikla Gaddi Leke",
     artist: "Udit Narayan, Aditya Narayan, Mithoon",
   },
@@ -32,7 +32,7 @@ let songs = [
   },
   {
     music: "Blender Ruchika Jangid 128 Kbps.mp3",
-    poster: "./image/Blender-Ruchika-Jangid-500-500.jpg",
+    poster: "Blender-Ruchika-Jangid-500-500.jpg",
     title: "Blender",
     artist: "Ruchika-Jangid",
   },  {
