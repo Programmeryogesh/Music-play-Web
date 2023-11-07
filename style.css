@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("pexels-moose-photos-1037992.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  /* animation: ani 1s linear infinite; */
+}
+
+@keyframes ani {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.card {
+  background: #0e111423;
+  width: 30%;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.art {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 16px;
+  color: #e5e7eb;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.artist {
+  font-size: 12px;
+  color: #4d5562;
+  margin-top: 5px;
+}
+
+.progressbar--container {
+  margin: 4px 0 10px 0;
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.elapsed,
+.remaining {
+  font-size: 10px;
+  color: #4d5562;
+}
+
+.fill {
+  background: #c93b76;
+  height: 5px;
+  width: 50%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto 10px;
+}
+
+.buttons div {
+  cursor: pointer;
+}
+
+.playBtn {
+  background: #c93b76;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressbar {
+  height: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progressBar {
+  width: 100%;
+  cursor: pointer;
+}
+/* 
+#progressBar{
+  -webkit-appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  background: #fff;
+} */
+
+/* #progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c93b76;
+  cursor: pointer;
+} */
+/* #progressBar::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c93b76;
+  cursor: pointer;
+} */
+
+/* #progressBar::-ms-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c93b76;
+  cursor: pointer;
+} */
+
+#volumeBar {
+  -webkit-appearance: none;
+  height: 5px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
+#volumeBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: #c93b76;
+  cursor: pointer;
+}
+
+.volume {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.volume i {
+  color: #fff;
+  cursor: pointer;
+}
+
+#pauseBtn {
+  display: none;
+}
+
+#title {
+  color: black;
+}
+
+#artist {
+  color: #07060c;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 700px){
+  body{
+    background: url(bgsong.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    backdrop-filter: blur(15px);
+   
+  }
+  .card{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #title {
+    color: #c93b76;
+  }
+  #artist{
+    color: azure;
+  }
+}
+@media only screen and (max-width: 500px){
+  body{
+    height: auto;
+  }
+  .card{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
