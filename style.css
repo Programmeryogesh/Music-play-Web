@@ -215,4 +215,10 @@ body {
     height: 100vh;
     border-radius: 0;
   }
+   .progressbar--container{
+    width: 100%;
+  }
+  .buttons{
+    width: 100%;
+  }
 }
